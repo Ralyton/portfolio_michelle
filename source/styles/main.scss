@@ -1,0 +1,110 @@
+@use '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    color: #fff;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0px auto;
+
+    @media (max-width: 767px) {
+        width: 90%;
+    }
+}
+
+
+
+header {
+    .navbar {
+        background-color: #D98859;
+        padding: 32px 0px;
+
+        .container {
+            .nav-link:hover {
+                color: #592202;
+            }
+            .navbar-nav {
+                
+                .nav-item {
+                    .nav-link {
+                        border: none;
+                        padding-right: 24px;
+                        padding-left: 24px;
+                        color: #592202;
+                        margin-left: 24px;
+                        
+                        &:hover {
+                            background-color: #592202;
+                            color: #fff;
+
+                            i {
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .active {
+                        background-color: #592202;
+                        color: #fff;
+
+                        i {
+                            color: #fff;
+                        }
+                        
+                        &:hover {
+                            background-color: #592202;
+                            color: #fff;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+    
+    .container-intro {
+        padding: 208px 0px 104px 0px;
+        border-bottom: 3px solid #BF9288;
+    }
+}
+
+h1, h2, p, i {
+    color: #592202;
+}
+
+button.botaocontato {
+    background-color: #592202;
+    color: #fff;
+    display: block;
+    margin: 0px auto;
+    padding: 16px;
+
+    i {
+        color: #fff;
+    }
+
+    &:hover {
+        background-color: #F25C05;
+        color: #fff;
+    }
+}
+
+section {
+    .container-sobre {
+        padding: 104px 0px;
+        border-bottom: 3px solid #68A689;
+    }
+
+    .container-cursos {
+        padding: 104px 0px;
+    }
+}
+
+#fotomichellecoffe {
+    max-height: 500px;
+}
