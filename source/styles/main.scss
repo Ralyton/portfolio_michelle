@@ -17,6 +17,10 @@
     @media (max-width: 767px) {
         width: 90%;
     }
+
+    @media (min-width: 768) and (max-width: 1023px) {
+        width: 90%;
+    }
 }
 
 
@@ -66,18 +70,13 @@ header {
             }
         }
     }
-    
-    .container-intro {
-        padding: 208px 0px 104px 0px;
-        border-bottom: 3px solid #BF9288;
-    }
 }
 
-h1, h2, p, i {
+h1, h2, h3, p, i, label {
     color: #592202;
 }
 
-button.botaocontato {
+button.botaocontato, .botaocurso, button.botaoform {
     background-color: #592202;
     color: #fff;
     display: block;
@@ -95,6 +94,11 @@ button.botaocontato {
 }
 
 section {
+    .container-intro {
+        padding: 208px 0px 104px 0px;
+        border-bottom: 3px solid #BF9288;
+    }
+
     .container-sobre {
         padding: 104px 0px;
         border-bottom: 3px solid #68A689;
@@ -102,9 +106,51 @@ section {
 
     .container-cursos {
         padding: 104px 0px;
+        border-bottom: 3px solid #D9B504;
+    }
+
+    .container-contato {
+        padding: 104px 0px;
+
+        .social-links {
+            li {
+                display: inline;
+
+                a {
+                    text-decoration: none;
+
+                    .instagram {
+                        color: rgb(198, 6, 221);
+                    }
+
+                    .whatsapp {
+                        color: #158501;
+                    }
+
+                    .facebook {
+                        color: #1877F2;
+                    }
+
+                    .twitter {
+                        color: #1C99E6;
+                    }
+                }
+            }
+        }
     }
 }
 
 #fotomichellecoffe {
     max-height: 500px;
+}
+
+footer {
+    background-color: #D98859;
+    padding: 16px 0px;
+
+    .container {
+        p {
+            margin: 0px;
+        }
+    }
 }
