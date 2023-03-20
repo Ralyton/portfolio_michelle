@@ -61,12 +61,12 @@
         <section id="inicio">
             <div class="container container-intro">
                 <div class="row align-items-center">
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <img class="w-100" src="build/images/cabecalho.jpeg" alt="Michelle sentada tocando viola">
                     </div>
-                    <div class="col-md-6">
-                        <h1 class="fw-bold text-center">Olá, meu nome é Michelle</h1>
-                        <p class="mt-3 mb-3">
+                    <div class="col-lg-6">
+                        <h1 class="fw-bold text-center mt-3">Olá, meu nome é Michelle</h1>
+                        <p class="mt-4 mb-4">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim mollitia ipsum nobis repellendus nam accusamus aspernatur a quis debitis ea eum, beatae quos, reprehenderit magnam officiis sed amet iure! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed laboriosam, veniam consequuntur nulla sapiente corporis quo tenetur vero culpa, dolor quia blanditiis accusantium quibusdam fuga? Praesentium quibusdam ipsam tenetur exercitationem?
                         </p>
                         <button type="button" class="btn rounded-pill fw-bold botaocontato">
@@ -92,7 +92,29 @@
                         </p>
                     </div>
                     <div class="col-md-5">
-                        <img id="fotomichellecoffe" src="build/images/michellecoffe.jpeg" alt="Michelle tomando café">
+                        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="3000">
+                                    <img src="build/images/michellecoffe.jpeg" alt="Michelle tomando café">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="build/images/michelleviola.jpeg" alt="Michelle segurando a Viola">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="build/images/michelle.jpeg" alt="Michelle despojada">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="build/images/michelleblackandwhite.jpeg" alt="Michelle em preto e branco">
+                                </div>
+                            </div>
+
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -104,8 +126,8 @@
                     <h2 class="text-center fw-bold">Cursos</h2>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
-                        <img class="w-100 mt-3 mb-3" src="build/images/cabecalho.jpeg" alt="">
+                    <div class="col-lg-4">
+                        <img class="w-100 mt-5 mb-3" src="build/images/cabecalho.jpeg" alt="">
                         <h3 class="text-center fw-bold">
                             Curso 1
                         </h3>
@@ -116,8 +138,8 @@
                             Estou interessado!
                         </a>
                     </div>
-                    <div class="col-md-4">
-                        <img class="w-100 mt-3 mb-3" src="build/images/cabecalho.jpeg" alt="">
+                    <div class="col-lg-4">
+                        <img class="w-100 mt-5 mb-3" src="build/images/cabecalho.jpeg" alt="">
                         <h3 class="text-center fw-bold">
                             Curso 2
                         </h3>
@@ -128,8 +150,8 @@
                             Quero me inscrever!
                         </a>
                     </div>
-                    <div class="col-md-4">
-                        <img class="w-100 mt-3 mb-3" src="build/images/cabecalho.jpeg" alt="">
+                    <div class="col-lg-4">
+                        <img class="w-100 mt-5 mb-3" src="build/images/cabecalho.jpeg" alt="">
                         <h3 class="text-center fw-bold">
                             Curso 3
                         </h3>
@@ -150,7 +172,7 @@
                     <h2 class="text-center fw-bold">Contato</h2>
                 </div>
                 <div class="row mt-3 align-items-center">
-                    <div class="col-md-6 mb-5 me-5">
+                    <div class="col-lg-6 mb-5 me-5">
                         <form>
                             <div class="mb-3">
                                 <label for="nome" class="form-label fw-bold">
@@ -179,7 +201,7 @@
                             <button type="submit" class="btn fw-bold rounded-pill w-100 botaoform">Enviar</button>
                         </form>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-lg-5">
                         <div class="row">
                             <h3 class="fs-4">
                                 <i class="bi bi-hand-thumbs-up-fill"></i>
